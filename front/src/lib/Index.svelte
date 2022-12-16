@@ -1,1 +1,1 @@
-<h1>Index!</h1>
+<h1>Seja bem vindo(a) aqui =)</h1>
