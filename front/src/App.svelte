@@ -19,11 +19,6 @@
 
 <main>
   <Navbar />
-  {#if $isLogged}
-    tá logado
-  {:else}
-    não tá
-  {/if}
 
   {#if $currentPage == "index"}
     <Index />
