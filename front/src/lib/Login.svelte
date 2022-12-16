@@ -1,5 +1,5 @@
 <script>
-  import { isLogged } from "../stores";
+  import { currentPage, isLogged } from "../stores";
 
 
   let username = "";
@@ -19,6 +19,7 @@
       return;
     }
     $isLogged = true;
+    $currentPage = 'home';
   }
 </script>
 

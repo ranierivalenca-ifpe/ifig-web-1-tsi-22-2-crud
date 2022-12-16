@@ -4,6 +4,7 @@
   import Register from "./lib/Register.svelte";
   import Login from "./lib/Login.svelte";
   import { currentPage, isLogged } from "./stores";
+  import Home from "./lib/Home.svelte";
 
 </script>
 
@@ -21,6 +22,8 @@
     <Register />
   {:else if $currentPage == 'login'}
     <Login />
+  {:else if $currentPage == 'home'}
+    <Home />
   {/if}
 
 </main>

@@ -6,6 +6,7 @@
       credentials: "include",
     });
     $isLogged = false;
+    $currentPage = 'index';
   }
 </script>
 
@@ -14,6 +15,6 @@
   <button on:click={() => ($currentPage = "register")}> Register </button>
   <button on:click={() => ($currentPage = "login")}> Login </button>
 {:else}
-  <button on:click={() => ($currentPage = "home")}> Página inicial </button>
+  <button on:click={() => ($currentPage = "home")}> Home </button>
   <button on:click={logout}> Sair </button>
 {/if}
