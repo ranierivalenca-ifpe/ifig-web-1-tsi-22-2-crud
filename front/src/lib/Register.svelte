@@ -8,10 +8,12 @@ function handle() {
     // aqui vamos submeter o formulário
     if (password != password2) return;
 
-    console.log('to aqui', {
-        username,
-        password,
-        password2
+    let form = new FormData();
+    form.append('username', username);
+    form.append('password', password);
+    fetch('http://localhost:8000/add-user.php', {
+        method: 'POST',
+        body: form
     })
 }
 
